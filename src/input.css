@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@tailwind utilities;
+*{  
+    
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+}
+
