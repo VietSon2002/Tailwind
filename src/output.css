@@ -584,8 +584,17 @@
   .-top-0 {
     top: calc(var(--spacing) * -0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-full {
+    top: 100%;
+  }
   .-left-60 {
     left: calc(var(--spacing) * -60);
+  }
+  .left-64 {
+    left: calc(var(--spacing) * 64);
   }
   .isolate {
     isolation: isolate;
@@ -604,12 +613,6 @@
   }
   .order-none {
     order: 0;
-  }
-  .col-\[\#6F7373\] {
-    grid-column: #6F7373;
-  }
-  .col-\[\#151415\] {
-    grid-column: #151415;
   }
   .col-auto {
     grid-column: auto;
@@ -719,8 +722,8 @@
   .me-3 {
     margin-inline-end: calc(var(--spacing) * 3);
   }
-  .me-10 {
-    margin-inline-end: calc(var(--spacing) * 10);
+  .me-4 {
+    margin-inline-end: calc(var(--spacing) * 4);
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
@@ -1244,6 +1247,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -1347,8 +1353,14 @@
   .rounded {
     border-radius: 0.25rem;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1485,9 +1497,6 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1496,6 +1505,9 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1672,11 +1684,11 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .px-36 {
-    padding-inline: calc(var(--spacing) * 36);
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
-  .px-37 {
-    padding-inline: calc(var(--spacing) * 37);
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1689,6 +1701,15 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-2\.5 {
+    padding-bottom: calc(var(--spacing) * 2.5);
   }
   .text-center {
     text-align: center;
@@ -2304,6 +2325,13 @@
       }
     }
   }
+  .hover\:text-\[\#4D40CA\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #4D40CA;
+      }
+    }
+  }
   .hover\:text-\[\#FB5B32\] {
     &:hover {
       @media (hover: hover) {
@@ -2314,7 +2342,7 @@
 }
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #0f0f0f;
+  background-color: gainsboro;
 }
 @keyframes spin {
   to {
