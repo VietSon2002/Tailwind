@@ -7,3 +7,14 @@ body {
     font-family: "Nunito", sans-serif;
     background-color: gainsboro;
 }
+
+.header-option {
+    @apply inline-block text-left relative me-10 py-5 font-bold;
+}
+
+.menu-home-heder{
+   @apply   px-7 py-2.5 min-w-3xl absolute -left-60 
+            top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+            transition-opacity duration-300  bg-white shadow-lg group-hover:shadow-xl rounded-lg
+}
+
